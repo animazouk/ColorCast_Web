@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>ColorCast</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0f0f0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+      }
+      .container {
+        background-color: white;
+        border-radius: 20px;
+        padding: 40px;
+        width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+      }
+      .container::before {
+        content: "";
+        background-image: url("https://placehold.co/400x400?text=Background+Pattern");
+        background-size: cover;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        z-index: -1;
+      }
+      .logo {
+        font-family: "Instrument Serif";
+        font-size: 50px;
+        font-weight: 600;
+        position: absolute;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        width: 100vw;
+        top: 120px;
+      }
+      .bgimg {
+        position: absolute;
+        width: 40vw;
+        top: 300px;
+      }
+      .form-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .form-subtitle {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .form-group select,
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+      }
+      .btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .btn-primary {
+        background-color: #5a4fcf;
+        color: white;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">ColorCast.</div>
+    <img src="paint.webp" class="bgimg" />
+    <div class="container">
+      <div class="form-title">ENTER the details..</div>
+      <div class="form-subtitle">
+        You are just one step away from your Shade..
+      </div>
+      <div class="form-group">
+        <label for="brand1">Select Brand</label>
+        <select id="brand1">
+          <option value="Asian Paints">Asian Paints</option>
+          <option value="Nerolac">Nerolac</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="input-code">Input Code</label>
+        <input type="text" id="input-code" placeholder="" />
+      </div>
+
+      <div class="form-group">
+        <label for="select-brand-2">Select Brand</label>
+        <select id="select-brand-2">
+          <option value="Asian Paints">Asian Paints</option>
+          <option value="Nerolac">Nerolac</option>
+        </select>
+      </div>
+      <button class="btn btn-primary">Generate</button>
+      <div id="result" style="margin-top: 20px; font-weight: bold; color: #5a4fcf;"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
