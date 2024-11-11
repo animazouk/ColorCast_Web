@@ -1,9 +1,9 @@
 [
-  { "Asian Paints": "black", "Nerolac": "kala" },
-  { "Asian Paints": "white", "Nerolac": "safed" },
-  { "Asian Paints": "green", "Nerolac": "hara" },
+  { "Asian Paints": "7110", "Nerolac": "2265D" },
+  { "Asian Paints": "ON17", "Nerolac": "2114P" },
+  { "Asian Paints": "X104", "Nerolac": "2014C" },
   { "Asian Paints": "red", "Nerolac": "lal" },
-  { "Asian Paints": "pink", "Nerolac": "gulabi" },
   { "Asian Paints": "blue", "Nerolac": "neela" },
   { "Asian Paints": "yellow", "Nerolac": "peela" }
 ]
+
