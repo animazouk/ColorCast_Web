@@ -1,9 +1,10 @@
-[
-  { "Asian Paints": "7110", "Nerolac": "2265D" },
-  { "Asian Paints": "ON17", "Nerolac": "2114P" },
-  { "Asian Paints": "X104", "Nerolac": "2014C" },
-  { "Asian Paints": "red", "Nerolac": "lal" },
-  { "Asian Paints": "blue", "Nerolac": "neela" },
-  { "Asian Paints": "yellow", "Nerolac": "peela" }
-]
-
+{
+  "Asian Paints": [
+    { "name": "Blue", "hex": "#0000FF", "code": "7110" },
+    { "name": "Black", "hex": "#000000", "code": "ON17" }
+  ],
+  "Nerolac": [
+    { "name": "Sky Blue", "hex": "#87CEEB", "code": "2265D" },
+    { "name": "Crimson", "hex": "#DC143C", "code": "2114P" }
+  ]
+}
