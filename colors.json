@@ -1,0 +1,10 @@
+{
+  "Asian Paints": [
+    { "name": "Blue", "hex": "#0000FF", "code": "7110" },
+    { "name": "Black", "hex": "#000000", "code": "ON17" }
+  ],
+  "Nerolac": [
+    { "name": "Sky Blue", "hex": "#87CEEB", "code": "2265D" },
+    { "name": "Crimson", "hex": "#DC143C", "code": "2114P" }
+  ]
+}

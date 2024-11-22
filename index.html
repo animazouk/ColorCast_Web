@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorCast.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="logo">ColorCast.</div>
+    <div class="container">
+        <div class="form-title">Scan a Color Shade</div>
+        <div class="form-subtitle">Select the brand to find the closest color match.</div>
+
+        <div class="form-group">
+            <label for="brandSelect">Select Brand</label>
+            <select id="brandSelect" aria-label="Select Brand">
+                <option value="Asian Paints">Asian Paints</option>
+                <option value="Nerolac">Nerolac</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="colorInput">Capture Color</label>
+            <input type="file" id="colorInput" accept="image/*" capture="environment" aria-label="Capture Color" />
+        </div>
+
+        <button class="btn" id="scanButton">Scan Color</button> <!-- Added button -->
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
